@@ -98,7 +98,12 @@ code, pre {
   margin: 20px 0;
 }
 
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
 .showcase-form {
+  animation: slideInFromRight 1s ease-in;
   position: relative;
   top: 60px;
   height: 350px;
@@ -142,6 +147,7 @@ code, pre {
 /* Stats */
 .stats {
   padding-top: 100px;
+  animation: slideInFromBottom 2s ease-in;
 }
 .stats-heading {
   max-width: 500px;
@@ -245,6 +251,51 @@ code, pre {
 /* Footer */
 .footer .social a {
   margin: 0 10px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    /* Position the item off the screen */
+    transform: translateX(-100%);
+  }
+  100% {
+    /* Position the item back to its normal position */
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    /* Position the item off the screen */
+    transform: translateX(100%);
+  }
+  100% {
+    /* Position the item back to its normal position */
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    /* Position the item off the screen */
+    transform: translateY(-100%);
+  }
+  100% {
+    /* Position the item back to its normal position */
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    /* Position the item off the screen */
+    transform: translateY(100%);
+  }
+  100% {
+    /* Position the item back to its normal position */
+    transform: translateX(0);
+  }
 }
 
 /* Tablets and Under */
